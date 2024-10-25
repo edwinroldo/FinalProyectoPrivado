@@ -31,6 +31,7 @@ app.use((err, req, res, next) => {
 
 const PORT_SERV = process.env.PORT_SERV || 4000
 
-app.listen(PORT_SERV)
+app.listen(PORT_SERV, function() {
+    console.log('Servidor en puerto ', PORT_SERV)
+})
 
-console.log('Servidor en puerto 4000')
